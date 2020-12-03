@@ -16,7 +16,7 @@ import com.bixterprise.pmes.models.Employe;
 import com.bixterprise.pmes.services.impl.EmployeService;
 
 @RestController
-@RequestMapping("/services/employes")
+@RequestMapping("/services/employes") 
 public class EmployeRestController {
 
 	@Autowired EmployeService service;
@@ -28,8 +28,6 @@ public class EmployeRestController {
 		return service.list(pageable).getContent();
 	}
 	
-	
-
 	@PostMapping
 	public Employe save(@RequestBody Employe e){
 		

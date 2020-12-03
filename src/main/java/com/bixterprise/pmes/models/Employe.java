@@ -24,6 +24,12 @@ public class Employe {
 	@Column(name="function")
 	private String fonction;
 
+	public Employe() {}
+	
+	public Employe(Long id) {
+		this.id = id;
+	}
+
 	public String getNom() {
 		return nom;
 	}
@@ -47,5 +53,15 @@ public class Employe {
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+	
+	
 	 
 }
