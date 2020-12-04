@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form-validator>
+	<formset>
+		<form name="frm_employe_insert">
+			<field property="writerNm" depend="required, maxlength, mask">
+				<arg0 key="frm_employeTest_insert.writerNm"/>
+				<arg1 key="100" resource="false"/>
+				
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>200</var-value>
+				</var>
+			
+			</field>
+		</form>
+	</formset>
+</form-validator>

@@ -28,6 +28,14 @@
         			</td>
 	        	</tr>
 	        </c:forEach>
+	        <tr>
+	        		<td></td>
+	        		<td></td>
+	        		<td></td>
+	        		<td>
+	        			<a href="employes/add"><button type="button" class="btn btn-success btn-add" data="${employe.id}"><i class="fa fa-edit"></i></button></a>
+        			</td>
+	        </tr>
         </table>
      </div>
  </div>

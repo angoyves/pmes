@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 	
+<mapper namespace="com.bixterprise.pmes.persistence.employeTestDAO" >
+
+	<resultMap id="selectListEmployeTestResult" type="com.bixterprise.pmes.domain.EmployeTestQVO">
+		<id property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="surname" column="surname"/>
+		<result property="function" column="function"/>
+	</resultMap>
+	
+	<select id="selectListEmployeTest"  resultMap="selectListEmployeTestResult">
+		SELECT name, surname, function 
+		FROM employees
+		ORDER BY name
+		
+	</select>
+	<!-- 
+	<insert id="insertEmployeTest" parameterType="com.bixterprise.pmes.domain.EmployeTestQVO">
+		INSERT INTO employees (
+					name, surname, function 
+		) VALUES (
+					#{name},#{surname},#{function}
+		)
+		
+	</insert>
+ -->
+</mapper>
